@@ -10,7 +10,7 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
 
-<bean class="com.springcore.lifecycle.Lifecycle" name="lifecycle" init-method="init" destroy-method="destroy">
+<bean class="com.springcore.xmllifecycle.Lifecycle" name="lifecycle" init-method="init" destroy-method="destroy">
     <property name="price" value="123"/>
 </bean>
 </beans>

@@ -1,4 +1,4 @@
-package com.springcore.lifecycle;
+package com.springcore.xmllifecycle;
 
 public class Lifecycle {
     private double price;
