@@ -9,7 +9,10 @@
            http://www.springframework.org/schema/beans/spring-beans.xsd
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
-    <bean class="com.springcore.interfacelifecycle.MyLifecycle" name="interface">
-        <property name="price" value="123"/>
-    </bean>
+    <context:annotation-config/>
+    <bean class="com.springcore.annotationLifeCycle.annotationLifecycle" name="annotation">
+    <property name="subject">
+        <value>Maths</value>
+    </property>
+  </bean>
 </beans>

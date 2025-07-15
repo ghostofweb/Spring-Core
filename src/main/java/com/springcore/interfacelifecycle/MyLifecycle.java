@@ -3,7 +3,7 @@ package com.springcore.interfacelifecycle;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class Lifecycle implements InitializingBean , DisposableBean{
+public class MyLifecycle implements InitializingBean , DisposableBean{
     private double price;
 
     public double getPrice() {
@@ -21,7 +21,7 @@ public class Lifecycle implements InitializingBean , DisposableBean{
                 '}';
     }
 
-    public Lifecycle() {
+    public MyLifecycle() {
         super();
     }
 
