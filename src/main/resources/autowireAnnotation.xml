@@ -11,7 +11,13 @@
            http://www.springframework.org/schema/context/spring-context.xsd"
 >
     <context:annotation-config/>
+
     <bean class="com.springcore.autowireannotation.Address" name="address">
+        <property name="street" value="grove street"/>
+        <property name="city" value="LA"/>
+    </bean>
+
+    <bean class="com.springcore.autowireannotation.Address" name="address1">
         <property name="street" value="grove street"/>
         <property name="city" value="LA"/>
     </bean>

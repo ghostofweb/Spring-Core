@@ -3,6 +3,7 @@ package com.springcore.autowireannotation;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Emp implements InitializingBean, DisposableBean {
     private Address address;
@@ -14,7 +15,6 @@ public class Emp implements InitializingBean, DisposableBean {
         return address;
     }
 
-    @Autowired
     public void setAddress(Address address) {
         this.address = address;
     }
@@ -26,8 +26,9 @@ public class Emp implements InitializingBean, DisposableBean {
                 '}';
     }
 
+
     @Autowired
-    public Emp(Address address) {
+    public Emp(@Qualifier("address1") Address address) {
         this.address = address;
     }
 

@@ -1,5 +1,7 @@
 package com.springcore.autowireannotation;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+
 public class Address {
     private String street;
     private String city;
@@ -20,7 +22,6 @@ public class Address {
         this.city = city;
     }
 
-    @Override
     public String toString() {
         return "Address{" +
                 "street='" + street + '\'' +
