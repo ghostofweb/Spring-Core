@@ -1,7 +1,8 @@
-package com.springcore.autowire;
+package com.springcore.autowireannotation;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Emp implements InitializingBean, DisposableBean {
     private Address address;
@@ -13,6 +14,7 @@ public class Emp implements InitializingBean, DisposableBean {
         return address;
     }
 
+    @Autowired
     public void setAddress(Address address) {
         this.address = address;
     }
@@ -24,6 +26,7 @@ public class Emp implements InitializingBean, DisposableBean {
                 '}';
     }
 
+    @Autowired
     public Emp(Address address) {
         this.address = address;
     }
