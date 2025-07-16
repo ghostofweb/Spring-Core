@@ -1,5 +1,6 @@
 package com.springcore.collections;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -41,6 +42,8 @@ public class Emp {
 
     public void setCourses(Map<String, String> courses) {
         this.courses = courses;
+        ArrayList<String> list = new ArrayList<>();
+
     }
 
     @Override
